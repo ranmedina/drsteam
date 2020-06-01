@@ -1,0 +1,14 @@
+.menu {
+  max-width: 1000px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 56%;
+  margin: 2vh auto;
+
+  @media only screen and (max-width: 600px) and (min-width: 0px) {
+    width: 90%;
+  }
+}

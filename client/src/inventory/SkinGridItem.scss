@@ -1,0 +1,48 @@
+.item__box {
+  height: 13vh;
+  max-width: 125px;
+  width: 30%;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0.5%;
+  padding: 7px;
+  text-align: center;
+  border-radius: 6px;
+  background: #292929;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  .image {
+    height: 65%;
+    overflow: hidden;
+
+    img {
+      width: 75%;
+      max-width: 90px;
+      height: auto;
+      display: inline-block;
+      margin: auto;
+    }
+  }
+
+  .price {
+    height: 20%;
+
+    p {
+      margin: 0;
+      color: white;
+    }
+  }
+
+  .exterior {
+    height: 15%;
+
+    p {
+      color: white;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

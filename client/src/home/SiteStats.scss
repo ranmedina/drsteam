@@ -1,0 +1,30 @@
+.sitestats_container {
+  text-align: center;
+  color: white;
+  font-family: Bebas Neue;
+  letter-spacing: 1.4px;
+  margin-top: 0;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+
+  @media only screen and(min-width: 992px) {
+    transform: translateY(-70%);
+    -webkit-transform: translateY(-70%);
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    -o-transform: translateY(-70%);
+  }
+
+  p {
+    margin: 0;
+    font-size: 5vh;
+    line-height: 5vh;
+
+    span {
+      color: #da8300;
+    }
+  }
+}

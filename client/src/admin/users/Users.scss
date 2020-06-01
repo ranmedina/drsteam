@@ -1,0 +1,19 @@
+.table-responsive {
+  width: 95%;
+  margin: auto;
+
+  tr {
+    cursor: unset;
+  }
+
+  tbody {
+    span {
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(17, 89, 197);
+        border-bottom: 2px solid rgb(58, 81, 212);
+      }
+    }
+  }
+}

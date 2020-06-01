@@ -1,0 +1,14 @@
+.app-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  // margin: 0 5px;
+  transition: 0.3s all ease-in-out;
+  outline: none !important;
+
+  &:hover {
+    // border: 2px solid black;
+    background-color: white;
+    color: black;
+  }
+}

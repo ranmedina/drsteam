@@ -1,0 +1,95 @@
+.float_chart {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  height: 12px;
+  background-color: gray;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: relative;
+
+  .float_pointer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: -9px;
+    width: 1px;
+    height: 30px;
+    z-index: 1;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      right: 0;
+      left: 0;
+      width: 1px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      bottom: -5px;
+    }
+  }
+
+  .float_divider {
+    position: absolute;
+    font-size: 10px;
+    bottom: -25px;
+    transform: translateX(-10px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0.1px;
+      background-color: gray;
+      top: -9px;
+      bottom: 14px;
+      left: 10px;
+    }
+  }
+
+  .fn,
+  .mw,
+  .ft,
+  .ww,
+  .bs {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .fn {
+    width: 7%;
+    background-color: rgb(0, 77, 192);
+  }
+
+  .mw {
+    width: 8%;
+    background-color: rgb(0, 179, 30);
+  }
+
+  .ft {
+    width: 23%;
+    background-color: rgb(199, 196, 0);
+  }
+
+  .ww {
+    width: 7%;
+    background-color: rgb(241, 117, 0);
+  }
+
+  .bs {
+    width: 55%;
+    background-color: rgb(160, 0, 0);
+  }
+}

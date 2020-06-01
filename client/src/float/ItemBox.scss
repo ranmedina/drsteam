@@ -1,0 +1,38 @@
+.item_box {
+  height: max-content;
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 15px 10px 10px;
+  margin: 10px auto;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px -3px black;
+
+  p {
+    margin: 0;
+  }
+
+  .title {
+    height: 10%;
+
+    p {
+      line-height: 40px;
+    }
+  }
+
+  .image {
+    height: 50%;
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .info {
+    height: max-content;
+
+    .floatvalue {
+      margin-top: 10px;
+      background-color: chocolate;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.view__options {
+  line-height: 60px;
+  text-align: center;
+
+  button {
+    width: 80px;
+    margin: 0 3px;
+  }
+}
+
+.loading__text {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

@@ -1,0 +1,59 @@
+.new_item_container {
+  width: 90%;
+  height: 100px;
+  max-width: 350px;
+  background-color: transparent;
+  border: 2px solid #bfbfbf;
+  color: #bfbfbf;
+  font-family: Bebas Neue;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .hovering_block {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-98%);
+    position: absolute;
+    background-color: white;
+    transition: 0.3s all;
+    transition-timing-function: cubic-bezier(0.68, -0.01, 0, 0.68);
+  }
+
+  &:hover {
+    &:not(.disabled) {
+      .hovering_block {
+        transform: translateX(0%);
+      }
+
+      .item_button {
+        color: black;
+      }
+    }
+  }
+
+  .item_button {
+    margin: 0;
+    position: relative;
+    transition: 0.3s all;
+  }
+
+  &.disabled {
+    opacity: 0.4;
+
+    &::after {
+      position: absolute;
+      content: 'Disabled';
+      bottom: 28px;
+      right: 0;
+      left: 0;
+      font-size: 9px;
+    }
+  }
+}

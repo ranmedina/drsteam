@@ -1,0 +1,55 @@
+.dropdown-toggle {
+  height: 28px;
+
+  &::after {
+    display: none !important;
+  }
+}
+
+.dropdown-menu {
+  top: 105% !important;
+  background-color: #1a3258 !important;
+  min-width: 100px !important;
+  padding: 0.2rem 0 !important;
+
+  .dropdown-item {
+    color: white !important;
+    padding: 0 1.5rem !important;
+
+    &:hover {
+      background-color: #1c4671 !important;
+    }
+  }
+}
+
+.steam_user {
+  background-color: #223f6f;
+  color: #ffffff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2px 10px;
+  // width: 150px;
+  border-radius: 3px;
+  font-weight: bold;
+  box-shadow: 0px 0px 2px 0px black;
+  cursor: pointer;
+
+  .username {
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .image {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 27px;
+    box-shadow: inset 0px 1px 6px 3px black;
+    background-size: cover;
+  }
+}
+
+.login-image {
+  cursor: pointer;
+}

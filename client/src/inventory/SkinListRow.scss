@@ -1,0 +1,10 @@
+tr {
+  line-height: 10px;
+  cursor: pointer;
+
+  td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  color: #9f9f9f;
+  width: 100%;
+  background-color: #3e3d39;
+
+  .footer-content {
+    span {
+      line-height: 30px;
+      font-size: 13px;
+      margin-left: 1vh;
+      float: left;
+
+      &.pull-right {
+        float: right;
+        margin-right: 1vh;
+      }
+    }
+
+    @media only screen and (max-width: 448px) {
+      span {
+        float: unset;
+        margin: 0;
+        display: block;
+
+        &.pull-right {
+          float: unset;
+          margin: 0;
+        }
+      }
+      text-align: center;
+    }
+  }
+}

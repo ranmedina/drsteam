@@ -1,0 +1,20 @@
+.account_container {
+  margin-top: 15px;
+
+  h2 {
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    font-size: 40px;
+    background: linear-gradient(to right, #006eff, #00adbf);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .total {
+    margin-bottom: 25px;
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-family: inherit;
+  }
+}

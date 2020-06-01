@@ -1,0 +1,21 @@
+{
+  "name": "mysteam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzienS/mysteam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayzienS/mysteam/issues"
+  },
+  "homepage": "https://github.com/jayzienS/mysteam#readme"
+}

@@ -1,0 +1,223 @@
+.navbar {
+  box-shadow: 0px 5px 5px -3px;
+  z-index: 1;
+  transition: 0.15s all ease-in-out;
+
+  .navbar-collapse {
+    &.show,
+    &.collapsing {
+      .nav-link {
+        &::after {
+          bottom: 18px;
+          margin-left: 5px;
+          line-height: 9px;
+          right: unset;
+        }
+      }
+
+      .dropdown-toggle,
+      .dropdown-menu {
+        margin: 2px 10px;
+      }
+
+      // .dropdown-menu {
+      //   margin: 1px 10px;
+      // }
+    }
+  }
+
+  &.bg-dark {
+    background-color: #1a2b49 !important;
+  }
+
+  padding: 10px !important;
+
+  &.shrinked {
+    padding: 0px 10px !important;
+
+    .logo {
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media only screen and(min-width: 992px) {
+    height: 70px;
+    padding: 0 2% !important;
+
+    &.shrinked {
+      height: 60px;
+
+      .logo {
+        p {
+          font-size: 35px;
+        }
+      }
+
+      .nav-link {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .navbar-nav {
+    line-height: 100%;
+  }
+
+  .navbar-brand {
+    font-size: 2.5vh !important;
+  }
+
+  .nav-link {
+    position: relative;
+    transition: 0.15s all ease;
+    padding: 5px 0.5rem;
+    font-size: 16px;
+    line-height: 40px;
+    padding-right: 0.7rem !important;
+    padding-left: 0.7rem !important;
+
+    @media only screen and(min-width: 992px) {
+      font-size: 17px;
+      line-height: 60px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px 2px 0;
+      fill: white;
+    }
+
+    .badge {
+      margin-left: 4px;
+    }
+
+    &.active,
+    &:hover {
+      // color: #c96600 !important;
+      color: rgb(219, 219, 219) !important;
+      background-color: rgb(36, 36, 36);
+
+      svg {
+        fill: orange;
+      }
+    }
+
+    &.disabled {
+      svg {
+        fill: gray;
+      }
+
+      &::after {
+        position: absolute;
+        content: 'Disabled';
+        bottom: 13px;
+        right: 9px;
+        background-color: orange;
+        color: black;
+        font-size: 10px;
+        line-height: 10px;
+        width: 47px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: monospace;
+      }
+    }
+  }
+
+  a.navbar-brand {
+    padding: 0;
+
+    .logo {
+      font-family: Bebas Neue;
+      letter-spacing: 1.5px;
+      font-size: 40px;
+      height: 60px;
+
+      p {
+        margin: 0;
+        line-height: 66px;
+        background: linear-gradient(to right, #00d4fd 0%, #7880ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100%;
+        transition: 0.15s ease-in;
+
+        &:hover {
+          background-size: 200%;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes logo-animation {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 200%;
+  }
+}
+
+@keyframes logo-animation {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 200%;
+  }
+}
+
+.acp-button {
+  color: red;
+  cursor: pointer;
+  margin: 6px 8px 0 1px;
+}
+
+.image-jumbotron {
+  position: relative;
+  margin-top: 0;
+
+  @media only screen and(min-width: 992px) {
+    // margin-top: 2vh;
+  }
+
+  .image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background-size: inherit;
+    background-position: center;
+    background-image: url('../assets/dust_ii.jpg');
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #222533;
+      opacity: 0.6;
+    }
+  }
+
+  .text {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 20px;
+    padding: 70px 5%;
+
+    @media only screen and(min-width: 992px) {
+      padding: 80px 22% !important;
+      padding: 35px 5%;
+    }
+  }
+}

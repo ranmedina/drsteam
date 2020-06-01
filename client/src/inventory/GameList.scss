@@ -1,0 +1,35 @@
+.gamelist {
+  text-align: center;
+  margin: auto;
+  height: 55px;
+  width: max-content;
+
+  .image {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.08s all ease-in-out;
+    opacity: 0.4;
+
+    &.chosen {
+      opacity: 1 !important;
+      box-shadow: 0px 2px 4px 0px black;
+
+      img {
+        width: 45px;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+
+      img {
+        width: 45px;
+      }
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

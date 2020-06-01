@@ -1,0 +1,17 @@
+.settings_container {
+  .row {
+    padding: 8px;
+
+    .col {
+      line-height: 38px; // React Bootstrap's row height
+    }
+  }
+
+  .divider {
+    height: 2px;
+    width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    background-color: gray;
+  }
+}

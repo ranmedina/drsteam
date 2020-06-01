@@ -1,0 +1,34 @@
+{
+  "name": "drsteam-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dr-logger": "^1.0.1",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.4",
+    "express-rate-limit": "^5.1.1",
+    "express-session": "^1.17.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-openid": "^0.4.0",
+    "socket.io": "^2.3.0",
+    "steamapi": "^2.0.7",
+    "steamidconvert": "^0.2.4"
+  },
+  "engines": {
+    "node": "12.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

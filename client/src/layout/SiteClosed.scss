@@ -1,0 +1,64 @@
+.page_container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+    width: 100%;
+    top: 37vh;
+    left: 50%;
+    transform: translate(-50%);
+
+    img {
+      width: 70px;
+      position: absolute;
+      top: -68px;
+      animation: 3s hammering infinite;
+    }
+
+    .logo {
+        background-color: gray;
+        padding: 5px;
+        width: 170px;
+        margin: 0 auto 10px auto;
+
+      .my,
+      .steam {
+        display: inline-block;
+        padding: 3px;
+        letter-spacing: 2px;
+        font-family: monospace;
+        text-transform: uppercase;
+      }
+
+      .my {
+        background-color: #343a40 !important;
+        color: gray;
+      }
+
+      .steam {
+        color: #343a40;
+      }
+    }
+  }
+}
+
+@keyframes hammering {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(17px);
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+  }
+}

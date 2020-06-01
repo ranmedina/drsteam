@@ -1,0 +1,12 @@
+._pagination {
+  position: inherit;
+  right: 0;
+  width: 95%;
+  margin: auto;
+
+  .pagination {
+    justify-content: flex-end;
+    padding: 3px 0 15px 0;
+    margin: 0;
+  }
+}
